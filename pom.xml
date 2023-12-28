@@ -22,30 +22,21 @@
 			<version>7.15.0</version>
 		</dependency>
 
-		<!-- cucumber-junit-platform-engine -->
+		<!-- cucumber-junit :: junit4-->
 		<dependency>
 			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-junit-platform-engine</artifactId>
+			<artifactId>cucumber-junit</artifactId>
 			<version>7.15.0</version>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- junit-jupiter-api -->
+		<!-- junit4 -->
 		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.10.1</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- junit-jupiter-engine -->
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.10.1</version>
-			<scope>test</scope>
-		</dependency>
-
 
 		<!-- selenium-java -->
 		<dependency>
