@@ -6,9 +6,9 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features/static-login.feature", 
+@CucumberOptions(features = "src/test/resources/Features/amazon-product-search2.feature", 
 	glue = {"com/simplilearn/bddtest/stepdefinitions"},
-	plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"})
-public class StaticLoginTestRunner {
+	plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+public class AmazonTestRunner {
 
 }

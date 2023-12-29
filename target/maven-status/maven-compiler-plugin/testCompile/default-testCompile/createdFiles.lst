@@ -1,0 +1,13 @@
+com\simplilearn\bddtest\testrunner\StaticLoginTestRunner.class
+com\simplilearn\bddtest\stepdefinitions\FacebookLoginSteps.class
+com\simplilearn\bddtest\stepdefinitions\AmazonProductSearchSteps.class
+com\simplilearn\bddtest\testrunner\SmokeTestsRunner.class
+com\simplilearn\bddtest\stepdefinitions\LoginSteps.class
+com\simplilearn\bddtest\stepdefinitions\ResetLoginFormSteps.class
+com\simplilearn\bddtest\stepdefinitions\AmazonProductSearch2Steps.class
+com\simplilearn\bddtest\testrunner\LoginTestRunner.class
+com\simplilearn\bddtest\stepdefinitions\TagsExSteps.class
+com\simplilearn\bddtest\stepdefinitions\AmazonHomepageSteps.class
+com\simplilearn\bddtest\stepdefinitions\StaticLoginSteps.class
+com\simplilearn\bddtest\stepdefinitions\HooksExSteps.class
+com\simplilearn\bddtest\testrunner\TestRunner.class

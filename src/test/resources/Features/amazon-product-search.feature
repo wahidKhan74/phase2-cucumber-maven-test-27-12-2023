@@ -13,3 +13,4 @@ Feature: Search products on Amazon
       | Apple Mac book    | Amazon.in : Apple Mac book    |
     Then Submit Search for the product
     And Clear search
+
