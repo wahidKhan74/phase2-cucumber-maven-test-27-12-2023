@@ -7,8 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features/amazon-product-search2.feature", 
-	glue = {"com/simplilearn/bddtest/stepdefinitions"},
-	plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+	glue = {"com/simplilearn/bddtest/stepdefinitions"})
 public class AmazonTestRunner {
 
 }
