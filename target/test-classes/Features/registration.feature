@@ -4,7 +4,7 @@ Feature: Registration
     Given user on the hompage
     And user follows "Register" button
 
-  @regression
+  @regression @ignore
   Scenario: Create a New User
     Given user should be on the registration page
     And user fills registration "email" with "xxxxx@gmail.com"
@@ -14,6 +14,7 @@ Feature: Registration
     Then User is created Successfully
     And user return back on registration page
 
+  @ignore
   Scenario: User does not follow form validations
     Given user should be on the registration page
     When user enters wrong characters

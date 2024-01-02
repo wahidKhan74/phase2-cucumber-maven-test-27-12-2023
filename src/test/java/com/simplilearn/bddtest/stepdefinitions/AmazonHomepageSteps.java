@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,10 +22,20 @@ public class AmazonHomepageSteps {
 	String siteUrl = "https://www.amazon.in/";
 	WebDriver driver;
 	
-	@Given("Open the Chrome and Launch the amazon application")
-	public void open_the_chrome_and_launch_the_amazon_application() {
+	@Before(value = "@HompageTest")
+	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", driverPath);
 	    driver = new ChromeDriver();
+	}
+	
+	@After(value = "@HompageTest")
+	public void cleanUp() {
+		if(driver!=null)
+			driver.quit();
+	}
+	
+	@Given("Open the Chrome and Launch the amazon application")
+	public void open_the_chrome_and_launch_the_amazon_application() {
 	    driver.get(siteUrl);
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 	}

@@ -34,7 +34,7 @@ public class FacebookLoginSteps {
 			driver.quit();
 	}
 	
-	@Given("I should be on the facebook login page")
+	@Given("^I should be on the facebook login page$")
 	public void i_should_be_on_the_facebook_login_page() {
 	   driver.get(siteUrl+"login");
 	}

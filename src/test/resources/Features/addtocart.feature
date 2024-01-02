@@ -10,4 +10,4 @@ Feature: Add to Cart
     Given User search for a product "Lenovo Laptop"
     When Add the first laptop that apears in the search results to the basket
     And User clicks on "Cart" link
-    Then User basket should display added 1 items
+    Then User basket should display added "1" items

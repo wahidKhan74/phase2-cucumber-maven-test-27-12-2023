@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,11 +21,19 @@ public class StaticLoginSteps {
 	String siteUrl ="file:///C:/WaheedTraining/phase2-cucumber-maven-test-27-12-2023/src/main/resources/static/login.html";
 	WebDriver driver;
 	
+	@Before(value = "@LoginTest")
+	public void setUp() {
+		System.setProperty("webdriver.chrome.driver", driverPath);
+	    driver = new ChromeDriver();
+	}
+	
+	@After(value = "@LoginTest")
+	public void cleanUp() {
+		if(driver!=null)
+			driver.quit();
+	}
 	@Given("^Open the Chrome and Launch the test application$")
 	public void open_the_chrome_and_launch_the_test_application() {
-		
-	    System.setProperty("webdriver.chrome.driver", driverPath);
-	    driver = new ChromeDriver();
 	    driver.get(siteUrl);
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 	}
